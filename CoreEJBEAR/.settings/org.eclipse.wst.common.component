@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="CoreEJBEAR">
+                
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+                
+        <dependent-module archiveName="CoreEJB.jar" deploy-path="/" handle="module:/resource/CoreEJB/CoreEJB">
+                        
+            <dependent-object>Module_1681810396306</dependent-object>
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="coreEjbWeb.war" deploy-path="/" handle="module:/resource/coreEjbWeb/coreEjbWeb">
+                        
+            <dependent-object>Module_1682852946766</dependent-object>
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+        <dependent-module archiveName="CoreEJBClient.jar" deploy-path="/lib" handle="module:/resource/CoreEJBClient/CoreEJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="CoreEJBApp.jar" deploy-path="/lib" handle="module:/resource/CoreEJBApp/CoreEJBApp">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+            
+    </wb-module>
+    
+</project-modules>

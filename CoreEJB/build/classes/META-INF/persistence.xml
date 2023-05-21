@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<!-- 	<persistence-unit name="CoreDB" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>JDBC/GATEWAY_CORE_XA</jta-data-source>
+		<non-jta-data-source>JDBC/GATEWAY_CORE</non-jta-data-source>
+		<properties>
+			<property name="hibernate.default_schema" value="EBPP_CORE" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.transaction.manager_lookup_class"	value="org.hibernate.transaction.WebSphereExtendedJTATransactionLookup" />
+			
+			<property name="hibernate.cache.use_second_level_cache"	value="true" />
+			<property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory" />
+			<property name="hibernate.cache.use_query_cache" value="true" />
+            <property name="hibernate.cache.provider_configuration_file_resource_path" value="/ehcache.xml" />	
+		</properties>
+	</persistence-unit>
+	 -->
+	<!-- <persistence-unit name="Core2DB" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>JDBC/GATEWAY_CORE2_XA</jta-data-source>
+		<non-jta-data-source>JDBC/GATEWAY_CORE2</non-jta-data-source>
+		<properties>
+			<property name="hibernate.default_schema" value="EBPP_CORE"/>
+            <property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.WebSphereExtendedJTATransactionLookup"/>
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+			<property name="hibernate.cache.use_second_level_cache" value="false"/>
+			<property name="hibernate.cache.use_query_cache" value="false"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="BWH_CoreDB" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>JDBC/BWH_CORE</jta-data-source>
+		<non-jta-data-source>JDBC/BWH_CORE</non-jta-data-source>
+		<properties>
+			<property name="hibernate.default_schema" value="OLAPUSER"/>
+            <property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.WebSphereExtendedJTATransactionLookup"/>
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+			<property name="hibernate.cache.use_second_level_cache" value="false"/>
+			<property name="hibernate.cache.use_query_cache" value="false"/>
+		</properties>
+	</persistence-unit> -->
+	
+	<persistence-unit name="ConfigurationDB" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<non-jta-data-source>JDBC/GATEWAY_CONFIGURATION</non-jta-data-source>
+		<class>model.Book</class>
+		<properties>
+			<property name="hibernate.default_schema" value="EBPP_CONFIGURATION" />
+			  <property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.WebSphereExtendedJTATransactionLookup"/>
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+			<property name="hibernate.cache.use_second_level_cache" value="false"/>
+			<property name="hibernate.cache.use_query_cache" value="false"/>
+		</properties>
+	</persistence-unit>
+</persistence>  
